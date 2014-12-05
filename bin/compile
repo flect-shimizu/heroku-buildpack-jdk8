@@ -19,7 +19,7 @@ if [ -d "$CACHE_DIR/.jdk7" ]; then
   echo "done"
 fi
 
-OPENJDK7_URL="https://s3.amazonaws.com/heroku-jvm-langpack-java/openjdk7-u2-heroku-temaki.tar.gz"
+OPENJDK7_URL="http://lang-jvm.s3.amazonaws.com/jdk/openjdk1.8.0_20.tar.gz"
 
 if [ ! -d "$BUILD_DIR/.jdk7" ]; then
   echo -n "-----> Installing OpenJDK7u2 build (to .jdk7)....."
