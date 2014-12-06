@@ -2,7 +2,7 @@
 # bin/use <build-dir>
 
 if [ -f $1/bin/vertx ]; then
-   echo "Vert.x framework detected" && exit 0
+   echo "Vert.x framework" && exit 0
 else
   echo "no" && exit 1
 fi
