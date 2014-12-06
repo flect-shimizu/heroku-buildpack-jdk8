@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # bin/use <build-dir>
 
-if [ -d $1/vertx ]; then
+if [ -r $1/bin/vertx ]; then
    echo "Vert.x framework detected" && exit 0
 else
   echo "no" && exit 1
