@@ -33,15 +33,15 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 cd $CACHE_DIR
 echo `pwd`
-echo `ls -l`
+echo `ls -al`
 
 cd $BUILD_DIR
 if [ -f "build.gradle" ]; then
   echo "Gradle build detected. Building"
   ./gradlew -project-cache-dir "$CACHE_DIR/.gradle"
-  mv build/mod .
+  mv build/mods .
   rm -rf build
-  echo `ls -l`
+  echo `ls -al`
 fi
 
 
