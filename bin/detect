@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # bin/use <build-dir>
 
-#if [ -d $1/mod ]; then
-   echo "Vert.x" && exit 0
-#else
-#  echo "no" && exit 1
-#fi
+if [ -f $1/bin/vertx ]; then
+   echo "Vert.x detected" && exit 0
+else
+  echo "no" && exit 1
+fi
